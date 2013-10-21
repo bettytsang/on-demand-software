@@ -29,7 +29,7 @@ public class OrderEventHandlerUnitTest {
 
     when(mockOrdersMemoryRepository.save(any(Order.class))).thenReturn(new Order(new Date()));
 
-    CreateOrderEvent ev = new CreateOrderEvent(new OrderDetails());
+    CreateOrderEvent ev;// = new CreateOrderEvent(new OrderDetails());
 
     uut.createOrder(ev);
 
