@@ -22,7 +22,7 @@ public class OrdersUnitTest {
     Map<UUID, Order> emptyOrderList = new HashMap<UUID, Order>();
     uut = new OrdersMemoryRepository(emptyOrderList);
   }
-/*
+
   @Test
   public void addASingleOrderToTheOrders() {
 
@@ -45,5 +45,5 @@ public class OrdersUnitTest {
     uut.delete(key);
 
     assertEquals(0, uut.findAll().size());
-  }*/
+  }
 }
